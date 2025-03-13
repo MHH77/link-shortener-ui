@@ -1,13 +1,16 @@
-import './App.css';
-import React from 'react';
-import UrlShortener from './components/UrlShortener';
+import "./App.css";
+import React from "react";
+import Header from "./components/Header/Header";
+import HeroSection from "./components/HeroSection/HeroSection";
+import ShortenLink from "./components/ShortenLink/ShortenLink";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <UrlShortener />
+    <div style={{ backgroundColor: "#0d6efd", minHeight: "100vh" }}>
+      <Header />
+      <HeroSection />
+      <ShortenLink />
     </div>
   );
-}
-
+};
 export default App;
